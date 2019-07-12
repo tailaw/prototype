@@ -10,6 +10,9 @@ import CoreLocation
 import UIKit
 import SwiftUI
 
+let eventData: [Event] = load("eventData.json")
+//let users: [User] = load("userData.json")
+
 let landmarkData: [Landmark] = load("landmarkData.json")
 let hikeData: [Hike] = load("hikeData.json")
 
@@ -53,7 +56,7 @@ final class ImageStore {
         
         return Image(sizedImage, scale: Length(ImageStore.scale), label: Text(verbatim: name))
     }
-
+ 
     fileprivate func _guaranteeInitialImage(name: String) -> _ImageDictionary.Index {
         if let index = images.index(forKey: name) { return index }
         

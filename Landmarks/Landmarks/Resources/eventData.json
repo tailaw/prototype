@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Soccer team trial",
+        "host": "Mr Simon Parker",
+        "location": "Sports ground, Carlmont High",
+        "description": "Trial for 1st and 2nd team, boys and girls teams.",
+        "numPeople": 100,
+        "participant": ["AnyaL","JoshC","KatyDeL"],
+        "category": "Sport",
+        "isCompleted": false,
+        "coordinates": {
+            "longitude": -122.288506,
+            "latitude": 37.506663
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 2,
+        "name": "Piano recital rehearsal audience",
+        "host": "KimMeow",
+        "location": "Art Center, Carlmont High",
+        "description": "Looking for audience for my piano rehearsal",
+        "numPeople": 30,
+        "participant": ["AnyaL","JoshC","KatyDeL"],
+        "category": "Art",
+        "isCompleted": false,
+        "coordinates": {
+            "longitude": -122.290474,
+            "latitude": 37.506075
+        },
+        "imageName": "silversalmoncreek"
+    },
+    {
+        "id": 3,
+        "name": "Ride to boba guys",
+        "host": "TimTim",
+        "location": "Boba Guy, San Carlos",
+        "description": "Heading there in 15 mins who wants to join me?",
+        "numPeople": 3,
+        "participant": ["AnyaL"],
+        "category": "Misc",
+        "isCompleted": false,
+        "coordinates": {
+            "longitude": -122.290474,
+            "latitude": 37.506075
+        },
+        "imageName": "chilkoottrail"
+    }
+]
