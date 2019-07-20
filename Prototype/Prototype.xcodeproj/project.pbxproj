@@ -45,9 +45,9 @@
 		33F4EC6222E11EFE0032D363 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F4EC6122E11EFE0032D363 /* Main.swift */; };
 		33F4EC6522E1200F0032D363 /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F4EC6422E1200F0032D363 /* FriendList.swift */; };
 		33F4EC6722E1237C0032D363 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F4EC6622E1237C0032D363 /* Notification.swift */; };
-		33F4EC6922E123DE0032D363 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F4EC6822E123DE0032D363 /* Account.swift */; };
 		33F4EC6C22E1974E0032D363 /* NotificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F4EC6B22E1974E0032D363 /* NotificationRow.swift */; };
 		33F4EC7022E1A8170032D363 /* FriendRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F4EC6F22E1A8170032D363 /* FriendRow.swift */; };
+		33F4EC7322E2F5A70032D363 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F4EC7222E2F5A70032D363 /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,9 +91,9 @@
 		33F4EC6122E11EFE0032D363 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		33F4EC6422E1200F0032D363 /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
 		33F4EC6622E1237C0032D363 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
-		33F4EC6822E123DE0032D363 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		33F4EC6B22E1974E0032D363 /* NotificationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRow.swift; sourceTree = "<group>"; };
 		33F4EC6F22E1A8170032D363 /* FriendRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRow.swift; sourceTree = "<group>"; };
+		33F4EC7222E2F5A70032D363 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,11 +129,11 @@
 				33F4EC0D22E11BFA0032D363 /* AppDelegate.swift */,
 				33F4EC0F22E11BFA0032D363 /* SceneDelegate.swift */,
 				33F4EC6122E11EFE0032D363 /* Main.swift */,
-				33F4EC6822E123DE0032D363 /* Account.swift */,
 				33F4EC2122E11C250032D363 /* Models */,
 				33F4EC2A22E11C4B0032D363 /* Event */,
 				33F4EC6322E11FF30032D363 /* Users */,
 				33F4EC6A22E1971E0032D363 /* Notification */,
+				33F4EC7122E2F5780032D363 /* Account */,
 				33F4EC3322E11C600032D363 /* Supporting Views */,
 				33F4EC3822E11DB40032D363 /* Resources */,
 				33F4EC1322E11C030032D363 /* Assets.xcassets */,
@@ -226,6 +226,14 @@
 				33F4EC6B22E1974E0032D363 /* NotificationRow.swift */,
 			);
 			path = Notification;
+			sourceTree = "<group>";
+		};
+		33F4EC7122E2F5780032D363 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				33F4EC7222E2F5A70032D363 /* Account.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,7 +334,6 @@
 				33F4EC7022E1A8170032D363 /* FriendRow.swift in Sources */,
 				33F4EC6522E1200F0032D363 /* FriendList.swift in Sources */,
 				33F4EC3622E11C600032D363 /* MapView.swift in Sources */,
-				33F4EC6922E123DE0032D363 /* Account.swift in Sources */,
 				33F4EC6222E11EFE0032D363 /* Main.swift in Sources */,
 				33F4EC3222E11C4B0032D363 /* EventDetail.swift in Sources */,
 				33F4EC3722E11C600032D363 /* CircleImage.swift in Sources */,
@@ -335,6 +342,7 @@
 				33F4EC2622E11C250032D363 /* Data.swift in Sources */,
 				33F4EC6722E1237C0032D363 /* Notification.swift in Sources */,
 				33F4EC2F22E11C4B0032D363 /* EventRow.swift in Sources */,
+				33F4EC7322E2F5A70032D363 /* Account.swift in Sources */,
 				33F4EC2722E11C250032D363 /* Event.swift in Sources */,
 				33F4EC2922E11C250032D363 /* User.swift in Sources */,
 			);

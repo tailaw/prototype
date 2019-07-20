@@ -54,53 +54,79 @@ struct EventCreate : View {
     
     var body: some View {
         NavigationView() {
-            Form() {
-                
-                Section(header: Text("Event detail").font(.subheadline)) {
-                    TextField($newEvent.title, placeholder: Text("Event Title"))
-                    TextField($newEvent.description, placeholder: Text("Description"))
-                        .frame(height: 50)
-                        .lineLimit(nil)
-                        .multilineTextAlignment(.leading)
-                        
-                    
-                    DatePicker($newEvent.timeEnds, displayedComponents: .hourAndMinute) {
-                        Text("Events ends at")
-                    }
-                    
-                    TextField($newEvent.location, placeholder: Text("Location"))
-                    
-                    MapView(coordinate: newEvent.locationCoordinate)
-                        .edgesIgnoringSafeArea(.top)
-                        .frame(height: 150)
-                }
-                
-                
-                 
-                Section {
-                    Picker(selection: $newEvent.category, label: Text("Category")) {
-                        ForEach(0 ..< NewEvent.categories.count) {
-                            Text(NewEvent.categories[$0]).tag($0)
-                        }
-                    }
-    
-                    Stepper(value: $newEvent.numPeople, in: 1...50) {
-                        Text("Looking for \(newEvent.numPeople) people")
-                    }
- 
-                }
-            }
-            .navigationBarTitle(Text("New Event"), displayMode: .inline)
-        
             
+            VStack {
+                Text("\n")
                 
-             
-            .navigationBarItems(trailing:
-                NavigationLink(destination: Text("Created")) {
-                    Text("Create")
+                Image("girl")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .cornerRadius(40)
+                    .overlay(Circle().stroke(Color.gray, lineWidth: 1))
+                
+                Text("AnyaL, let's start a new event!")
+                    .font(.headline)
+                
+                Text("Find people around you to do things together.")
+                    .font(.subheadline)
+                
+                Form() {
                     
+                    Section(header: Text("Tell us about the event").font(.subheadline)) {
+                        TextField($newEvent.title, placeholder: Text("Event Title"))
+                        TextField($newEvent.description, placeholder: Text("Description. What are we going to do?"))
+                            .frame(height: 50)
+                            .lineLimit(nil)
+                            .multilineTextAlignment(.leading)
+                        
+                        
+                        DatePicker($newEvent.timeEnds, displayedComponents: .hourAndMinute) {
+                            Text("Events ends at")
+                        }
+                        
+                        TextField($newEvent.location, placeholder: Text("Location. Where do we meet?"))
+                        
+                        MapView(coordinate: newEvent.locationCoordinate)
+                            .edgesIgnoringSafeArea(.top)
+                            .frame(height: 150)
+                    }
+                    
+                    
+                    
+                    Section {
+                        Picker(selection: $newEvent.category, label: Text("Category")) {
+                            ForEach(0 ..< NewEvent.categories.count) {
+                                Text(NewEvent.categories[$0]).tag($0)
+                            }
+                        }
+                        
+                        Stepper(value: $newEvent.numPeople, in: 1...50) {
+                            Text("Looking for \(newEvent.numPeople) people")
+                        }
+                        
+                    }
                 }
-            )
+                .navigationBarTitle(Text("New Event"), displayMode: .inline)
+                    
+                    
+               
+                .navigationBarItems(leading:
+                    NavigationLink(destination: Text("Clear")) {
+                        Text("Clear")
+                    }, trailing:
+                    NavigationLink(destination: Text("Create")) {
+                        Text("Create")
+                } )
+                
+                
+                
+                
+                
+            }
+            
+            
+            
+            
             /*
              
             //Big Create button underneath the form
