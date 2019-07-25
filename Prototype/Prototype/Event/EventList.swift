@@ -42,7 +42,7 @@ struct EventList: View {
                     //.edgesIgnoringSafeArea(.top)
                     .frame(height: 250)
                 
-                HStack {
+                HStack(spacing: 30) {
                     Text("All")
                     .color(.blue)
                     .underline()

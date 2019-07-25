@@ -62,24 +62,26 @@ struct Account : View {
                     
                 }
                 
+                Spacer()
+                
                 List {
                     Text("Account Settings")
                     Text("Manage Notifications")
                     Text("Log out")
                 }
-                Spacer()
+                //Spacer()
                 
             }
             .navigationBarItems(leading:
                 NavigationLink(destination: Text("Edit")) {
                     Image(systemName: "pencil")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 20, height: 20)
                 }, trailing:
                 NavigationLink(destination: Text("Setting")) {
                     Image(systemName: "gear")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 20, height: 20)
             } )
         }
         

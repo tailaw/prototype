@@ -10,10 +10,48 @@ import SwiftUI
 
 struct FriendList : View {
     
+    var event: Event = eventData[0]
     let friends:[String] = ["AnyaL","JoshC","KatyDeL", "DavidK"]
     
     var body: some View {
-        NavigationView() {
+        
+        /*VStack {
+            MapView(coordinate: event.locationCoordinate)
+                //.edgesIgnoringSafeArea(.top)
+                .frame(height: 250)
+            .padding(.bottom, 100)
+            ScrollView(.horizontal, showsIndicators: false) {
+                
+                HStack {
+                    //ForEach((1...3).reversed()) {_ in
+                        //Text("This is view number")
+                    Group{
+                        List(eventData) { event in
+                            NavigationLink(destination: EventDetail(event:event)) {
+                                EventRow(event: event)
+                            }
+                            
+                        }
+                    }
+                    Group {
+                        List(eventData) { event in
+                            NavigationLink(destination: EventDetail(event:event)) {
+                                EventRow(event: event)
+                            }
+                            
+                        }
+                    }
+                
+                    //}
+                }
+                
+            //}
+            Spacer()
+        }
+        }*/
+        
+        
+         NavigationView() {
             
             List {
                 ForEach(eventData) { event in
